@@ -5,12 +5,12 @@ import { envs } from "../../config";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: envs.DB_HOST,  // ⚠️ si corres dentro de Docker desde Node, usar "postgres"
+  host: envs.DB_HOST,  
   port: envs.DB_PORT,
   username: envs.DB_USER,
   password: envs.DB_PASS,
   database: envs.DB_NAME,
-  synchronize: true, // solo en desarrollo
+  synchronize: true, 
   logging: true,
   entities: [UserEntitySchema],
   migrations: [],
