@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: cicv0109
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: mystore
       LANG: es_ES.utf8
       LC_COLLATE: es_ES.utf8
@@ -24,7 +24,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
-      - "8080"
+      - "8080:80"
 
 volumes:
   postgres_data:
