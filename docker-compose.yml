@@ -9,6 +9,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: mystore
+      LANG: es_ES.utf8
+      LC_COLLATE: es_ES.utf8
     ports:
       - "5432:5432"
     volumes:
